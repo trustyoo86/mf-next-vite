@@ -1,5 +1,10 @@
 import { Button } from "@repo/ui/button";
 import Image from "next/image";
+import dynamic from 'next/dynamic';
+
+// @ts-ignore
+const Todo = dynamic(() => import('todoApp/Todo'));
+
 
 export default function Home() {
   return (
@@ -22,7 +27,7 @@ export default function Home() {
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
-
+        <Todo />
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
