@@ -3,7 +3,7 @@ import Image from "next/image";
 import dynamic from 'next/dynamic';
 
 // @ts-ignore
-const Todo = dynamic(() => import('todoApp/Todo'));
+const Todo = dynamic(() => import('shopping/Test'), { ssr: false });
 
 
 export default function Home() {
