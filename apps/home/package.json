@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "rm -rf .next && NEXT_PRIVATE_LOCAL_WEBPACK=true next dev -p 3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,7 +14,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@module-federation/nextjs-mf": "^8.3.20",
+    "@module-federation/nextjs-mf": "8.3.20",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

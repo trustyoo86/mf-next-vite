@@ -2,8 +2,13 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
-
+import dynamic from 'next/dynamic';
+import { lazy } from 'react';
 const inter = Inter({ subsets: ["latin"] });
+// @ts-ignore
+const Test = dynamic(() => import('cart/Test'));
+// @ts-ignore
+const TestShopping = dynamic(() => import('shopping/Test'), { ssr: false });
 
 export default function Home() {
   return (
@@ -15,6 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
+        <Test />
+        <TestShopping />
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;

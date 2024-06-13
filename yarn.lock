@@ -2022,17 +2022,19 @@
     chalk "3.0.0"
     find-pkg "2.0.0"
 
-"@module-federation/nextjs-mf@6.5.1":
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/@module-federation/nextjs-mf/-/nextjs-mf-6.5.1.tgz#44871b5e5b2ac81be4702bcdacf8f935bfda0a09"
-  integrity sha512-uCf79fPgGzkgo1GdUfuJd9WwJcEHn0WT5BTeJXRTL6kiHaiudZQRNTSJIcvOq1oRuXZG6A18hvlk6rx3vicnlw==
+"@module-federation/nextjs-mf@8.3.20":
+  version "8.3.20"
+  resolved "https://registry.yarnpkg.com/@module-federation/nextjs-mf/-/nextjs-mf-8.3.20.tgz#b8332423adcfd41c790bf1645096b82a5c2ca947"
+  integrity sha512-pKMx54G9quuNJditqsWD65mbJcu3aX2TBpgs/HN863UOLl2OVuzB0WLAN0Ox2lXgrna6f+Ab2En968cjUl4LmQ==
   dependencies:
-    "@module-federation/node" "0.12.2"
-    "@module-federation/utilities" "1.8.0"
-    encoding "0.1.13"
+    "@module-federation/enhanced" "0.1.19"
+    "@module-federation/node" "2.2.10"
+    "@module-federation/runtime" "0.1.19"
+    "@module-federation/sdk" "0.1.19"
+    "@module-federation/utilities" "3.0.24"
+    "@module-federation/webpack-type" "0.0.1"
     eventemitter3 "^5.0.0"
     fast-glob "^3.2.11"
-    node-fetch "2.6.11"
     webpack-sources "^3.2.3"
 
 "@module-federation/nextjs-mf@^8.3.19":
@@ -2049,30 +2051,6 @@
     eventemitter3 "^5.0.0"
     fast-glob "^3.2.11"
     webpack-sources "^3.2.3"
-
-"@module-federation/nextjs-mf@^8.3.20":
-  version "8.3.20"
-  resolved "https://registry.yarnpkg.com/@module-federation/nextjs-mf/-/nextjs-mf-8.3.20.tgz#b8332423adcfd41c790bf1645096b82a5c2ca947"
-  integrity sha512-pKMx54G9quuNJditqsWD65mbJcu3aX2TBpgs/HN863UOLl2OVuzB0WLAN0Ox2lXgrna6f+Ab2En968cjUl4LmQ==
-  dependencies:
-    "@module-federation/enhanced" "0.1.19"
-    "@module-federation/node" "2.2.10"
-    "@module-federation/runtime" "0.1.19"
-    "@module-federation/sdk" "0.1.19"
-    "@module-federation/utilities" "3.0.24"
-    "@module-federation/webpack-type" "0.0.1"
-    eventemitter3 "^5.0.0"
-    fast-glob "^3.2.11"
-    webpack-sources "^3.2.3"
-
-"@module-federation/node@0.12.2":
-  version "0.12.2"
-  resolved "https://registry.yarnpkg.com/@module-federation/node/-/node-0.12.2.tgz#9abf138ef579692ffd316e0b44e7bd69bb512fd2"
-  integrity sha512-eh2hq5cx92S7S1Y9Vp/OVpbzEmWhiBIcSWaUf9kUqyjNpH5pzMgh9cX6Etp2hn63OFv2SaYvZ84h0rqrf/C7VA==
-  dependencies:
-    "@module-federation/utilities" "1.4.0"
-    encoding "0.1.13"
-    node-fetch "2.6.7"
 
 "@module-federation/node@2.2.10":
   version "2.2.10"
@@ -2177,16 +2155,6 @@
     find-pkg "2.0.0"
     fs-extra "9.1.0"
     resolve "1.22.8"
-
-"@module-federation/utilities@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@module-federation/utilities/-/utilities-1.4.0.tgz#c7b8c6e08262af6377714d94557929a3df67e64e"
-  integrity sha512-J4KISJvLmFhZEgBhdntn6MWqElWU6vMC/JuQT7MdNe8Apc8qoYis0FKGp4gp8YkIPPhplkQExy2vS14+3KxoJA==
-
-"@module-federation/utilities@1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@module-federation/utilities/-/utilities-1.8.0.tgz#08a8db8053539562fb9dbd29bb426c1558a1d780"
-  integrity sha512-qKbZF+SU7jfAt+q1kRUNxU1jzHErRyIP77DA+yCYCJaagWaFuz0Hmud8Yr6n/mQ1WJgQeh+gmNA0ad75koKopQ==
 
 "@module-federation/utilities@3.0.23":
   version "3.0.23"
@@ -5626,7 +5594,7 @@ encodeurl@^1.0.2, encodeurl@~1.0.2:
   resolved "https://registry.npmjs.org/encodeurl/-/encodeurl-1.0.2.tgz"
   integrity sha512-TPJXq8JqFaVYm2CWmPvnP2Iyo4ZSM7/QKcSmuMLDObfpH5fi7RUGmd/rTDf+rut/saiDiQEeVTNgAmJEdAOx0w==
 
-encoding@0.1.13, encoding@^0.1.13:
+encoding@^0.1.13:
   version "0.1.13"
   resolved "https://registry.npmjs.org/encoding/-/encoding-0.1.13.tgz"
   integrity sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==
@@ -9052,20 +9020,6 @@ no-case@^3.0.4:
   dependencies:
     lower-case "^2.0.2"
     tslib "^2.0.3"
-
-node-fetch@2.6.11:
-  version "2.6.11"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.11.tgz#cde7fc71deef3131ef80a738919f999e6edfff25"
-  integrity sha512-4I6pdBY1EthSqDmJkiNk3JIT8cswwR9nfeW/cPdUagJYEQG7R95WRH74wpz7ma8Gh/9dI9FP+OU+0E4FvtA55w==
-  dependencies:
-    whatwg-url "^5.0.0"
-
-node-fetch@2.6.7:
-  version "2.6.7"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
-  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
-  dependencies:
-    whatwg-url "^5.0.0"
 
 node-fetch@2.7.0:
   version "2.7.0"
