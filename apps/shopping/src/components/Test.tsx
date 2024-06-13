@@ -1,6 +1,6 @@
 function Test() {
   return (
-    <div>Test Module federation component</div>
+    <div>Test Module federation component - Shopping</div>
   );
 }
 
