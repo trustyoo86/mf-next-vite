@@ -6,15 +6,15 @@ import federation from '@originjs/vite-plugin-federation';
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    port: 3001,
+    port: 3003,
   },
   plugins: [
     react(),
     federation({
-      name: 'todoApp',
+      name: 'todo',
       filename: 'remoteEntry.js',
       exposes: {
-        './Todo': './src/App.tsx',
+        './Test': './src/components/Test.tsx',
       },
     }),
   ],

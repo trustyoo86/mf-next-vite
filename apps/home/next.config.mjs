@@ -5,6 +5,7 @@ const remotes = isServer => {
   return {
     cart: `cart@http://localhost:3001/_next/static/${location}/remoteEntry.js`,
     shopping: `shopping@http://localhost:3002/remoteEntry.js`,
+    todo: 'todo@http://localhost:3003/assets/remoteEntry.js'
   };
 };
 

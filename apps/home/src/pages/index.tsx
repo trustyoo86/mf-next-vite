@@ -9,6 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 const Test = dynamic(() => import('cart/Test'));
 // @ts-ignore
 const TestShopping = dynamic(() => import('shopping/Test'), { ssr: false });
+// @ts-ignore
+// const TestTodo = dynamic(() => import('todo/Test'), { ssr: false });
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <Test />
         <TestShopping />
+        {/* <TestTodo /> */}
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
